@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "675324792841",
+    "project_id": "firstassignment-d1604",
+    "storage_bucket": "firstassignment-d1604.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675324792841:android:902ce4a7ba81b48a2e68d8",
+        "android_client_info": {
+          "package_name": "com.example.firstassignment_ahmad_172"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDV3HG9UDBhe_CnAxOxGFNaX_o_MMnSXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashboardActivity">
+
+    <!-- Sidebar (Navigation Drawer) -->
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="?attr/colorSurface"
+        android:orientation="vertical"
+        android:padding="20dp">
+    </LinearLayout>
+
+    <!-- Main Chat Screen -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image (Centered) -->
+        <ImageView
+            android:id="@+id/vet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/vet"
+             />
+
+
+        <!-- Foreground UI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <!-- Top Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@color/login"
+                android:gravity="center_vertical"
+                android:elevation="4dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Vet Vision"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/logout_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginTop="6dp"
+                    android:padding="8dp"
+                    android:src="@drawable/logout"/>
+            </LinearLayout>
+
+            <!-- Chat Area -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"/>
+
+            <!-- Bottom Input Area -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/image_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_image"/>
+
+                <EditText
+                    android:id="@+id/message_input"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Type a message"
+                    android:padding="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/send_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_send"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/cow2"
+        android:label="Animal Disaster"
+        android:roundIcon="@mipmap/cow_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstAssignmentAhmad172"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="35">
+
+        <!-- Allow legacy HTTP library (for older Android versions) -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <!-- Splash Activity (Main Entry) -->
+        <activity android:name=".SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity (Remove MAIN if using SplashActivity) -->
+        <activity android:name=".MainActivity" android:exported="true"/>
+
+        <!-- Dashboard Activity (Fix Keyboard Overlapping) -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- Signup Activity -->
+        <activity android:name=".SignupActivity"/>
+    </application>
+</manifest>

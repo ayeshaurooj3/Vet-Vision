@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Black background for a bold, modern contrast -->
+    <solid android:color="#20368F"/>
+
+    <!-- Cyan glow-like stroke for a futuristic feel -->
+    <stroke android:width="2dp" android:color="#000000" />
+
+    <!-- Cyan corners to add a premium accent -->
+    <corners android:topLeftRadius="20dp"
+        android:topRightRadius="8dp"
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"/>
+
+    <!-- Padding for clean text alignment -->
+    <padding android:left="12dp"
+        android:top="10dp"
+        android:right="12dp"
+        android:bottom="10dp"/>
+</shape>

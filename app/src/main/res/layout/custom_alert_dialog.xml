@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Warning Icon -->
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/warning"
+        android:contentDescription="Warning Icon"
+        android:layout_gravity="center"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Image"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" The uploaded image is not a cow teat.\nPlease upload a valid teat image."
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"/>
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/btnOoK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/login"
+        android:textColor="@color/white"/>
+</LinearLayout>

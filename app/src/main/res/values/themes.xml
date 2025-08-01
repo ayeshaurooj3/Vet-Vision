@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base Light Theme -->
+    <style name="Base.Theme.FirstAssignmentAhmad172" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/login</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Background & Surface Colors -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/light_gray</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <!-- Material Alert Dialog Style -->
+    <style name="MaterialAlertDialog_Style" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:background">?attr/colorSurface</item>
+    </style>
+
+    <!-- Apply Base Theme -->
+    <style name="Theme.FirstAssignmentAhmad172" parent="Base.Theme.FirstAssignmentAhmad172" />
+</resources>
